@@ -1,10 +1,10 @@
-This is a multi-threaded CPU miner for Vertcoin,
+This is a multi-threaded CPU miner for Verium,
 fork of Jeff Garzik's reference cpuminer.
 
 License: GPLv2.  See COPYING for details.
 
 Downloads:  https://sourceforge.net/projects/cpuminer/files/
-Git tree:   https://github.com/Bufius/cpuminer-vert
+Git tree:   https://github.com/ocminer/cpuminer-verium
 
 Dependencies:
 	libcurl			http://curl.haxx.se/libcurl/
@@ -66,3 +66,6 @@ and all_proxy environment variables.
 Also many issues and FAQs are covered in the forum thread
 dedicated to this program,
 	https://bitcointalk.org/index.php?topic=55038.0
+
+This is an unoptimized version running without ASM code, it's very slow, someone has to rewrite the ASM code to work with
+the larger Buffer and NSize of Verium which would make it much faster. Then compile with USE_ASM to actually use the ASM code.
